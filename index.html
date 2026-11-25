@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>nabhan lyric.</title>
+<meta name="description" content="Nabhan Lyric Chowdhury: software developer, chess player, artist and writer based in Dhaka, Bangladesh." />
+<meta property="og:title" content="nabhan lyric." />
+<meta property="og:image" content="assets/projects/calendio.jpg" />
+<meta name="theme-color" content="#ffffff" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='23' font-family='Helvetica,Arial' font-size='20' font-style='italic' text-anchor='middle' fill='%23000'%3El%3C/text%3E%3C/svg%3E" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="is-booting">
+
+<div class="backdrop" aria-hidden="true"></div>
+
+<div id="boot" class="boot" role="status" aria-label="Loading">
+  <img src="assets/el/swag.png" alt="" class="boot__img" />
+  <div class="boot__bar"><span id="bootFill"></span></div>
+  <div class="boot__pct" id="bootPct">000</div>
+</div>
+
+<div class="ctl">
+  <button class="ctl__b" id="invertToggle" aria-pressed="false">invert</button>
+  <button class="ctl__b" id="soundToggle" aria-pressed="false">music on/off</button>
+</div>
+
+<main id="top">
+
+<!-- ============ 01 · FRONT ============ -->
+<section class="sec sec--dark hero" id="hero">
+  <div class="stage" data-rise>
+    <img src="assets/el/star-a.png" alt="" class="el el--star-a" aria-hidden="true" />
+    <img src="assets/el/star-b.png" alt="" class="el el--star-b" aria-hidden="true" />
+    <img src="assets/el/dice.png" alt="" class="el el--dice" aria-hidden="true" />
+    <h1 class="lay lay--first">nabhan</h1>
+    <p class="lay lay--last" aria-hidden="true">lyric.</p>
+  </div>
+  <a class="cue" href="#work" data-nav aria-label="Scroll down"><i></i></a>
+</section>
+
+<!-- ============ 02 · WORK ============ -->
+<section class="sec sec--dark machine" id="work">
+  <div class="stage" aria-hidden="true">
+    <img src="assets/el/flower.png" alt="" class="el el--flower" />
+  </div>
+  <div class="machine__stage">
+    <canvas id="pspCanvas"></canvas>
+    <div class="machine__loading" id="pspLoading"><i class="spin" aria-hidden="true"></i></div>
+  </div>
+  <div class="rail" id="rail" aria-live="polite">
+    <b id="railIdx">01</b><i id="railTot">/09</i>
+    <a class="rail__open" id="railOpen" href="#" target="_blank" rel="noopener" aria-label="Open the full song">↗</a>
+  </div>
+  <div class="keys" aria-hidden="true"><kbd>←</kbd><kbd>→</kbd><kbd>✕</kbd></div>
+</section>
+
+<!-- ============ 03 · PROJECTS ============ -->
+<section class="sec sec--dark projects" id="projects">
+  <div class="projects__wrap">
+    <header class="projects__head">
+      <h2 class="projects__h">projects<i>.</i></h2>
+      <p class="projects__sub">things i built. click one to open it.</p>
+    </header>
+    <ol class="projects__list">
+    <li><a class="proj" href="https://calendio-app.netlify.app" target="_blank" rel="noopener">
+      <span class="proj__n">01</span>
+      <span class="proj__img"><img src="assets/projects/calendio.jpg" alt="Calendio" loading="lazy" width="1200" height="750" /></span>
+      <span class="proj__t">Calendio</span>
+      <span class="proj__d">The calendar I plan every day in. Time blocks, booking links, all on your own machine.</span>
+      <span class="proj__m">Rust · egui <b>download ↗</b></span>
+    </a></li>
+    <li><a class="proj" href="https://flowday-linux.netlify.app" target="_blank" rel="noopener">
+      <span class="proj__n">02</span>
+      <span class="proj__img"><img src="assets/projects/flowday.jpg" alt="Flowday" loading="lazy" width="1200" height="750" /></span>
+      <span class="proj__t">Flowday</span>
+      <span class="proj__d">All your tasks, one calm day. Drag them onto today's calendar and Claude helps you plan.</span>
+      <span class="proj__m">Rust · egui · Claude <b>download ↗</b></span>
+    </a></li>
+    <li><a class="proj" href="https://solidcad-app.netlify.app" target="_blank" rel="noopener">
+      <span class="proj__n">03</span>
+      <span class="proj__img"><img src="assets/projects/solidcad.jpg" alt="SolidCAD" loading="lazy" width="1200" height="750" /></span>
+      <span class="proj__t">SolidCAD</span>
+      <span class="proj__d">Design parts the SolidWorks way, for free, on the FreeCAD engine.</span>
+      <span class="proj__m">Python · FreeCAD <b>download ↗</b></span>
+    </a></li>
+    <li><a class="proj" href="https://tradedesk-desk.netlify.app" target="_blank" rel="noopener">
+      <span class="proj__n">04</span>
+      <span class="proj__img"><img src="assets/projects/tradedesk.jpg" alt="tradedesk" loading="lazy" width="1200" height="750" /></span>
+      <span class="proj__t">tradedesk</span>
+      <span class="proj__d">Reads market news as it breaks, scores it per stock and suggests trades.</span>
+      <span class="proj__m">Python · FastAPI · React <b>showcase ↗</b></span>
+    </a></li>
+    <li><a class="proj" href="https://github.com/Fs1lyric/atomsim" target="_blank" rel="noopener">
+      <span class="proj__n">05</span>
+      <span class="proj__img"><img src="assets/projects/atomsim.jpg" alt="atomsim" loading="lazy" width="1200" height="750" /></span>
+      <span class="proj__t">atomsim</span>
+      <span class="proj__d">Atoms, fission and chain reactions simulated from measured nuclear data.</span>
+      <span class="proj__m">C++ · raylib <b>source ↗</b></span>
+    </a></li>
+    <li><a class="proj" href="https://github.com/Fs1lyric/openbrain" target="_blank" rel="noopener">
+      <span class="proj__n">06</span>
+      <span class="proj__img"><img src="assets/projects/openbrain.jpg" alt="openbrain" loading="lazy" width="1200" height="750" /></span>
+      <span class="proj__t">openbrain</span>
+      <span class="proj__d">A spiking brain simulator: biophysical neurons in Rust, Python on top.</span>
+      <span class="proj__m">Rust · Python <b>source ↗</b></span>
+    </a></li>
+    <li><a class="proj" href="https://fs1lyric.github.io/odyssey-design/" target="_blank" rel="noopener">
+      <span class="proj__n">07</span>
+      <span class="proj__img"><img src="assets/projects/odyssey.jpg" alt="Odyssey Design" loading="lazy" width="1200" height="750" /></span>
+      <span class="proj__t">Odyssey Design</span>
+      <span class="proj__d">Documents, spreadsheets, decks and a video timeline in one local-first app.</span>
+      <span class="proj__m">Rust · Tauri <b>site ↗</b></span>
+    </a></li>
+    <li><a class="proj" href="https://fs1lyric.github.io/tokenmeter/" target="_blank" rel="noopener">
+      <span class="proj__n">08</span>
+      <span class="proj__img"><img src="assets/projects/tokenmeter.jpg" alt="tokenmeter" loading="lazy" width="1200" height="750" /></span>
+      <span class="proj__t">tokenmeter</span>
+      <span class="proj__d">Shows where your AI spend goes, by model, repo and branch. Fails CI on cost jumps.</span>
+      <span class="proj__m">TypeScript <b>site ↗</b></span>
+    </a></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ 04 · ABOUT ============ -->
+<section class="sec sec--dark about" id="about">
+  <div class="stage">
+    <img src="assets/el/cd-a.png" alt="" class="el el--cd-a" aria-hidden="true" />
+    <img src="assets/el/cd-b.png" alt="" class="el el--cd-b" aria-hidden="true" />
+    <h2 class="lay lay--abouth">About me</h2>
+    <div class="lay lay--bio">
+      <p>I'm Nabhan Lyric Chowdhury, a software developer, chess player, artist and writer based in Dhaka, Bangladesh.</p>
+      <p>What started as a curiosity about art and computers grew into a dream, and then a profession, across media content, writing and code. Chasing that vision sharpened me as a writer, illustrator, programmer and chess player. Today I channel that energy into coding projects and writing books.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 · CONTACT ============ -->
+<section class="sec sec--dark contact" id="contact">
+  <div class="stage">
+    <img src="assets/el/cards.png" alt="" class="el el--cards" aria-hidden="true" />
+    <h2 class="lay lay--contact">contact</h2>
+    <p class="lay lay--me" aria-hidden="true">me.</p>
+    <div class="lay lay--icons">
+      <a href="mailto:fs.lyric@proton.me" aria-label="Email fs.lyric@proton.me">
+        <img src="assets/el/ic-mail.png" alt="" />
+      </a>
+      <a href="https://www.instagram.com/volksreader/" target="_blank" rel="noopener" aria-label="Instagram @volksreader">
+        <img src="assets/el/ic-ig.png" alt="" class="icons__ig" />
+      </a>
+    </div>
+    <nav class="lay lay--links" aria-label="Elsewhere">
+      <a href="https://github.com/Fs1lyric" target="_blank" rel="noopener">github</a>
+      <a href="https://www.chess.com/member/volksreaders" target="_blank" rel="noopener">chess.com</a>
+      <a href="mailto:fs.lyric@proton.me">fs.lyric@proton.me</a>
+    </nav>
+  </div>
+  <p class="credit">PSP model by <a href="https://sketchfab.com/3d-models/sony-psp-dca89d10ec304d0cab76837750df7761" target="_blank" rel="noopener">Ilya Ostrovsky</a>, CC BY 4.0. Song: <a href="https://open.spotify.com/track/2lyDiaFNx1ch934LI1qWSE" target="_blank" rel="noopener">stay</a> by Nextime &amp; We Are Not Friends, 30s preview via Apple Music.</p>
+</section>
+
+</main>
+
+<!-- preload=auto, not none: the track is set rolling muted from the first frame,
+     so it is buffered and ready to be unmuted the instant the visitor clicks -->
+<audio id="bgAudio" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e8/d4/c0/e8d4c08b-0844-e6ab-e715-9d3317d37b37/mzaf_2598225907516352653.plus.aac.p.m4a" loop preload="auto" playsinline></audio>
+
+<script type="importmap">
+{ "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.1/examples/jsm/"
+} }
+</script>
+<script src="js/data.js"></script>
+<script src="js/contours.js"></script>
+<script src="js/main.js"></script>
+<script src="js/track.js"></script>
+<script type="module" src="js/psp.js"></script>
+</body>
+</html>
