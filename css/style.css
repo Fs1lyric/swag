@@ -172,8 +172,7 @@ body.is-invert .boot{--el-inv:1}
 @keyframes spin-cw {to{--spin:360deg}}
 @keyframes spin-ccw{to{--spin:-360deg}}
 .el--dice  {left:32.45%;top:19.26%;width:35.10%}
-.lay--first{left:22.6%;top:43.0%;font-size:4cqw;font-style:italic}
-.lay--last   {left:59.84%;top:43.0%;font-size:4cqw;font-style:italic}
+.lay--first{left:50%;top:43.0%;transform:translate(-50%,var(--ty,0));font-size:4cqw;font-style:italic;white-space:nowrap}
 
 .cue{position:absolute;bottom:1.5rem;left:50%;transform:translateX(-50%);z-index:6;padding:.6rem}
 .cue i{display:block;width:1px;height:34px;background:currentColor;opacity:.3;position:relative;overflow:hidden}
@@ -295,8 +294,7 @@ kbd{font-family:var(--f-vcr);font-size:.8rem;border:1px solid currentColor;opaci
     width:100vw;height:auto;min-height:100svh;container-type:normal;
     -webkit-mask-image:none;mask-image:none;
   }
-  .lay--first{left:6%;top:36%;font-size:9vw}
-  .lay--last{left:67%;top:56%;font-size:9vw}
+  .lay--first{left:50%;top:46%;font-size:9vw}
   .el--dice{left:20%;top:40%;width:58%}
   .el--star-a{left:54%;top:1%;width:54%}
   .el--star-b{left:-26%;top:64%;width:92%}
